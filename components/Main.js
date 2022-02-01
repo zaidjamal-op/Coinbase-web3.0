@@ -10,7 +10,7 @@ import { useWeb3 } from "@3rdweb/hooks"
 
 
 const Main = ({walletAddress, sanityTokens, thirdWebTokens}) => {
-  const { connectWallet } = useWeb3();
+  const { disconnectWallet, connectWallet } = useWeb3();
   const [isOpen, setIsOpen] = useRecoilState(modalState);
   const router = useRouter();
   const [walletBalance, setWalletBalance] = useState(0)
@@ -63,7 +63,7 @@ const Main = ({walletAddress, sanityTokens, thirdWebTokens}) => {
       <h2 className="text-4xl mr-10 xl:text-5xl font-bold text-white">Assets</h2>
       <div className="flex items-center justify-center space-x-4">
         {walletAddress ? (
-          <div className="border-2 border-gray-700 rounded-sm p-1 cursor-pointer">
+          <div className="border-2 border-gray-700 rounded-sm p-1 cursor-pointer" onClick={disconnectWallet}>
           <h4 className="text-[#26ad75]">Wallet Connected</h4>
           <div className="text-white">{walletAddress.slice(0,7)} ... {walletAddress.slice(35)}</div>
       </div>
