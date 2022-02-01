@@ -8,12 +8,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@3rdweb/react": "^1.8.1",
+    "@3rdweb/sdk": "^1.36.11",
+    "@headlessui/react": "^1.4.3",
+    "@sanity/client": "^2.23.2",
+    "@sanity/image-url": "^1.0.1",
+    "chart.js": "^3.7.0",
+    "ethers": "^5.5.3",
     "next": "12.0.8",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-chartjs-2": "^4.0.1",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-modal": "^3.14.4",
+    "recoil": "^0.6.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
     "eslint": "8.7.0",
-    "eslint-config-next": "12.0.8"
+    "eslint-config-next": "12.0.8",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.16"
   }
 }
